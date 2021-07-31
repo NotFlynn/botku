@@ -13,7 +13,10 @@
   "license": "ISC",
   "dependencies": {
     "discord-buttons": "^4.0.0",
+    "discord-reply": "^0.1.2",
     "discord.js": "^12.5.3",
+    "lyrics-finder": "^21.7.0",
+    "mathjs": "^9.4.4",
     "quick.db": "^7.1.3"
   }
 }
