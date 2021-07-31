@@ -18,11 +18,6 @@ client.on('ready', () => {
   console.log('Hyouka!!');
 setInterval(() => client.user.setActivity(`Watching ${client.guilds.cache.size} servers | zhelp ⏰`, { type: "PLAYING", status: "idle" }), 60000)
 
-setInterval(() => {
-   require("axios").get("https://Zlyn.mmiftahulazmi8.repl.co");
-}, 5000);
-})
-
 const commandfiles = fs.readdirSync('./commands').filter(file => file.endsWith('js'))
      for(const file of commandfiles) {
        const command = require(`./commands/${file}`);
