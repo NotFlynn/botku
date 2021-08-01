@@ -23,7 +23,7 @@ module.exports = {
     .addField("➳ <a:SC_pepeSimp:850269137603395595>・Images",`\`wasted\`,\`changemymind\`,\`magik\`,\`challenge\`.`)
     .addField("➳ <a:SC_PepeGoose:850267564738478100>・Utility","\`whois\`,\`avatar\`,\`snipe\`,\`ping\`,\`math\`,\`weather\`,\`server\`,\`say\`,\`lyric\`,\`translate\`, `afk`,`youtube-together`.")
     .addField("➳ <a:DS_popcat2:814418693424414741>・Fun Commands",'\`playstore\`,\`howgay\`,\`meme\`,\`tictactoe\`,\`ship\`.')
-    .addField("➳ <a:bear_police:836145442089336872>・Moderation",'\`announce\`,\`clear\`,\`nuke\`,\`prefix\`,\`lock\`,\`unlock\`,\`toggle\`, `kick`, `ban`,`unban`.')
+    .addField("➳ <a:bear_police:836145442089336872>・Moderation",'\`announce\`,\`clear\`,\`nuke\`,\`lock\`,\`unlock\`,\`toggle\`, `kick`, `ban`,`unban`.')
     .addField("➳ <:ALS_mahkota:861121571967074324>・Owner Commands",'\`blacklist\`,\`whitelist\`,\`eval\`.')
     .setFooter(`Help`,client.user.displayAvatarURL({format: 'png', dynamic: true})+"?size=2048")
     .setTimestamp();
