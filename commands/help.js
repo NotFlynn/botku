@@ -19,7 +19,7 @@ module.exports = {
     .setAuthor("Zlynn Help Menu","https://cdn.discordapp.com/attachments/842967536256942083/856031207937802260/MOSHED-2021-6-20-11-42-11.gif")
     .setColor(member.displayHexColor || "#B8DEB4")
     .setThumbnail("https://cdn.discordapp.com/attachments/842967536256942083/856031207937802260/MOSHED-2021-6-20-11-42-11.gif")
-    .setDescription(`**・My prefix is \`${prefix}\`**\u000A**・If you found some bug, please report it using \`zreportbug [description]\`\u000A **・Use \`zhelp (commandname)\` to get more command information!**\u000A**・Command list :**`)
+    .setDescription(`**・My prefix is \`${prefix}\`**\u000A**・If you found some bug, please report it using \`zreportbug [description]\`\u000A **・Use \`zhelp (commandname)\` to get more command information!\u000A**・Command list :**`)
     .addField("➳ <a:SC_pepeSimp:850269137603395595>・Images",`\`wasted\`,\`changemymind\`,\`magik\`,\`challenge\`.`)
     .addField("➳ <a:SC_PepeGoose:850267564738478100>・Utility","\`whois\`,\`avatar\`,\`snipe\`,\`ping\`,\`math\`,\`weather\`,\`server\`,\`say\`,\`lyric\`,\`translate\`, `afk`,`youtube-together`.")
     .addField("➳ <a:DS_popcat2:814418693424414741>・Fun Commands",'\`playstore\`,\`howgay\`,\`meme\`,\`tictactoe\`,\`ship\`.')
