@@ -18,7 +18,7 @@ module.exports = {
         const embed = new discord.MessageEmbed()
         .setTitle('New Bug Reported 📩')
         .addField('・Reported by',`${message.author.username}#${message.author.discriminator} || \`${message.author.id}\``)
-        .addField('・Server ID',`${message.guil.name} || \`${message.guild.id}\``)
+        .addField('・Server ID',`${message.guild.name} || \`${message.guild.id}\``)
         .addField('・Description', query)
         .setTimestamp()
         .setFooter('New Bug', client.user.displayAvatarURL({format: 'png', dynamic: true})+"?size=2048")
