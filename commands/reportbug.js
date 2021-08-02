@@ -15,7 +15,7 @@ module.exports = {
 
         message.reply(`Thanks for reporting!. Remember, abusing this command will result in **Blacklisted** from the bot commands <:PepeWhut:779543545370771468> `)
     
-        const embed = new Discord.MessageEmbed()
+        const embed = new discord.MessageEmbed()
         .setTitle('New Bug Reported 📩')
         .addField('・Reported by',`${message.author.username}#${message.author.discriminator} || \`${message.author.id}\``)
         .addField('・Server ID',`${message.guil.name} || \`${message.guild.id}\``)
