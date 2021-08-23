@@ -14,7 +14,7 @@ description: 'Ban someone from a server!',
 
     let member = message.mentions.members.first() || message.guild.members.cache.get(args[0])
 
-    if(!args[0]) return message.channel.reply('Please use the right usage, `zhelp ban` <:PepeSipp:823489766770737152>')
+    if(!args[0]) return message.reply('Please use the right usage, `zhelp ban` <:PepeSipp:823489766770737152>')
 
     if(!args[1]) return message.reply(`Tag a user to ban <a:Walter:861224718010023947>`)
 
