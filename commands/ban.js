@@ -16,8 +16,6 @@ description: 'Ban someone from a server!',
 
     if(!args[0]) return message.reply('Please use the right usage, `zhelp ban` <:PepeSipp:823489766770737152>')
 
-    if(!args[1]) return message.reply(`Tag a user to ban <a:Walter:861224718010023947>`)
-
     if(!member) return message.reply('Who tf is that <:PepeWhut:779543545370771468>, i cant find that user')
     if(!member.bannable) return message.reply(`You cant ban a staff member 
 <:MikeRIP:852763454146347020>`)

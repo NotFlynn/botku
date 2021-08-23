@@ -16,8 +16,6 @@ module.exports = {
 
     if(!args[0]) return message.reply('Please use the right usage, `zhelp kick` <:PepeSipp:823489766770737152>')
 
-    if(!args[1]) return message.channel.send(`Tag a user to ban <a:Walter:861224718010023947>`)
-
     if(!member) return message.channel.send(`Who tf is that <:PepeWhut:779543545370771468>, i cant find that user`)
     if(!member.kickable) return message.channel.send(`You cant kick a staff member 
     <:MikeRIP:852763454146347020>`)
