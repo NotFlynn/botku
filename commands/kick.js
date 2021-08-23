@@ -8,33 +8,25 @@ module.exports = {
   cooldown: 3,
 
   async run (client, message, args) {
-    if (!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(`:no_entry: This command can only be used by staff members [ ${message.author} ]`)
-    if (!message.guild.me.hasPermission("KICK_MEMBERS")) return message.channel.send('I do not have permission to charge members :/')
+    if (!message.member.hasPermission("KICK_MEMBERS")) return message.reply(`Imagine no perms <a:DS_adogelele:819922349641695292>`)
+    if (!message.guild.me.hasPermission("KICK_MEMBERS")) return message.reply('I dont have permissions to kick someone <:MikeRIP:852763454146347020>')
 
 
     let member = message.mentions.members.first() || message.guild.members.cache.get(args[0])
 
-    const kosongembed = new Discord.MessageEmbed()
-        .setTitle('Kick command')
-        .setDescription(`
-        **Description:** Kick user from the server\n
-        **Usage:** ${prefix}kick [user] [reason]\n
-        **Example:** ${prefix}kick user bye
-        `)
-        .setColor('RED')
+    if(!args[0]) return message.reply('Please use the right usage, `zhelp kick` <:PepeSipp:823489766770737152>')
 
-    if(!args[0]) return message.channel.send(kosongembed)
+    if(!args[1]) return message.channel.send(`Tag a user to ban <a:Walter:861224718010023947>`)
 
-    if(!args[1]) return message.channel.send(`🚫 **${message.author.username}** please tag the user`)
+    if(!member) return message.channel.send(`Who tf is that <:PepeWhut:779543545370771468>, i cant find that user`)
+    if(!member.kickable) return message.channel.send(`You cant kick a staff member 
+    <:MikeRIP:852763454146347020>`)
 
-    if(!member) return message.channel.send(`🚫 Could not find the user!`)
-    if(!member.kickable) return message.channel.send(`🚫 **${message.author.username}** You can't kick users except staff members!`)
-
-    if (member.id === message.author.id) return message.channel.send(`🚫 **${message.author.username}** you can't burden yourself :/`)
+    if (member.id === message.author.id) return message.channel.send('You cant kick yourself <:MikeRIP:852763454146347020>')
 
     let reason = args.slice(1).join(" ")
 
-    if (reason === undefined) reason = "No reason gives."
+    if (!reason) return message.rely('Please use the right usage, `zhelp kick` <:PepeSipp:823489766770737152>')
 
     member.kick({reason: reason}); 
 
