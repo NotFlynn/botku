@@ -2,10 +2,10 @@ const discord = require('discord.js')
 const db = require('quick.db')    
    
 module.exports = {
-name: "whitelist",
+name: "dm",
 cooldown: '2',
-description: "Whitelisted a user from the blacklisted users",
-usage: "zwhitelist [user]",
+description: "Send a dm to a user that reporting a bug",
+usage: "zdm [user]",
 async run (client, message, args){
     if(message.author.id !== '768378164942471188') return;
 
