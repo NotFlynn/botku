@@ -16,7 +16,7 @@ client.cooldowns = new Discord.Collection();
 
 client.on('ready', () => {
   console.log('Hyouka!!');
-setInterval(() => client.user.setActivity(`Watching ${client.guilds.cache.size} servers | zhelp 🥵`, { type: "PLAYING", status: "idle" }), 60000)
+setInterval(() => client.user.setActivity(`Updating soon, You need to re-invite this bot 😭`, { type: "PLAYING", status: "idle" }), 60000)
 })
 
 const commandfiles = fs.readdirSync('./commands').filter(file => file.endsWith('js'))
