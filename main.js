@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const { token, prefix } = require('./config.json');
+const { prefix } = require('./config.json');
 const fs = require('fs');
 const disbut = require('discord-buttons')(client);
 const db = require('quick.db')
@@ -127,4 +127,4 @@ if(Whitelisted == true ) return
     }
   });
 
-client.login(token); 
+client.login(process.env.token); 
